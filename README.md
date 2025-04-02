@@ -7,6 +7,13 @@ A World of Warcraft (1.12) addon that enhances the default user interface to be 
 ![Overview](screenshots/overview.jpg)
 *(Addons used: ShaguController, ShaguTweaks, ShaguPlates, pfQuest)*
 
+## Installation (Vanilla, 1.12)
+1. Download **[Latest Version](https://github.com/shagu/ShaguController/archive/master.zip)**
+2. Unpack the Zip file
+3. Rename the folder "ShaguController-master" to "ShaguController"
+4. Copy "ShaguController" into Wow-Directory\Interface\AddOns
+5. Restart Wow
+
 ## Keybinding
 
 The addon sets in-game keybinds based on the button mappings provided by SteamDeck's "Keyboard (WASD) and Mouse"-Layout:
@@ -51,17 +58,15 @@ Enter the Desktop Mode, navigate to your World of Warcraft directory and install
     git clone https://github.com/shagu/ShaguController
     cd -
 
-Now copy the `AutoLogin.exe` from the addon directory to the root folder of your game:
-
-    cp Interface/AddOns/ShaguController/autologin/AutoLogin.exe .
-
 Open Steam Library and click on "[+] Add a Game" and select "Add a Non-Steam Game...".
-Browse to your World of Warcraft Folder and select AutoLogin.exe. Then choose "Add Selected Programs".
-Find the "AutoLogin.exe" in your Steam Library and right click -> Properties.
-* Set the name to: World of Warcraft
-* Set the launch options: `Wow.exe account password 1000 --proton`  
-  - account: your account name
-  - password: your account password
-  - 1000: the delay it waits before entering your credentials
+Browse to your World of Warcraft Folder and select WoW.exe. Then choose "Add Selected Programs".
+Find the "WoW.exe" in your Steam Library and right click -> Properties. You can set the name there to: World of Warcraft
 
-You can now launch the game from within the SteamDeck UI and it will automatically log you in.
+Next, open the Steam Settings and navigate to "Steam Play". There you want to enable: "Enable Steam Play for all other titles".
+The preselected proton version should be fine. If something doesn't work or you have graphical glitches, try to select another version there.
+
+## AutoLogin
+
+Entering an account and password on a Steam Deck can be a hassle. A client patch like [Turtle-Autologin](https://github.com/Haaxor1689/turtle-autologin) or
+[Vanilla-Autologin](https://github.com/Haaxor1689/vanilla-autologin) can help by adding an account selection field to the login screen.
+Follow the install instructions there to get it running.
